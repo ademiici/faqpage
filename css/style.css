@@ -1,0 +1,46 @@
+/* color variables */
+:root{
+    --primary-color-1: #054042;
+    --primary-color-2: #065659;
+    --primary-color-3: #087276;
+    --primary-color-4: #109ea3;
+    --white-color: rgb(255, 255, 255);
+    
+}
+/* body styling */
+body {
+    background-color: var(--primary-color-4);
+}
+h2{
+    color:var(--primary-color-1); 
+}   
+.accordion {
+    /* padding: 10px; */
+    background: var(--primary-color-3);
+    border-radius: 10px;
+}
+.accordion_question p {
+    /* margin: 5px; */
+    /* padding: 0; */
+    font-family: Verdana;
+    /* font-size: 20px; */
+}
+.accordion_answer p {
+    /* margin: 5px; */
+    /* padding: 10px; */
+    /* font-size: large; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white-color);
+    background: var(--primary-color-2);
+    border-radius: 10px;
+}
+.accordion:hover {
+    cursor: pointer;
+}
+.accordion_answer {
+    display: none;
+}
+.accordion.active .accordion_answer {
+    display: block;
+}
+    
